@@ -1,6 +1,6 @@
 # Harness Template Copier
 
-This Python script facilitates copying templates across different scopes (e.g., from organization scope to project scope and vice versa) within the Harness platform. It utilizes the `harness_py_sdk` to interact with the Harness API.
+This Python script facilitates copying templates across different scopes (e.g., from organization scope to project scope and vice versa) within the Harness platform. It utilizes the [harness_py_sdk](https://github.com/guilhermezanini-harness/harness-py-sdk) to interact with the Harness API.
 
 ## Prerequisites
 
