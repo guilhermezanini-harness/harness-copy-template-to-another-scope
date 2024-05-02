@@ -1,6 +1,6 @@
 # Harness Template Copier
 
-This Python script facilitates copying templates across different scopes (e.g., from organization scope to project scope and vice versa) in the Harness platform. It utilizes the `harness_py_sdk` to interact with the Harness API.
+This Python script facilitates copying templates across different scopes (e.g., from organization scope to project scope and vice versa) within the Harness platform. It utilizes the `harness_py_sdk` to interact with the Harness API.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before using this script, ensure you have the following:
 
    Clone this repository to your local machine using:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:guilhermezanini-harness/harness-copy-template-to-another-scope.git
    ```
 
 2. **Install Dependencies**
@@ -32,11 +32,11 @@ Configure the script by setting the following environment variables in your syst
 
 - `HARNESS_PLATFORM_API_KEY`: Your Harness API key.
 - `HARNESS_ACCOUNT_IDENTIFIER`: The identifier for your Harness account.
-- `HARNESS_TEMPLATE_REFERENCE`: (Optional) The reference identifier for the template.
+- `HARNESS_TEMPLATE_REFERENCE`: The reference identifier for the template.
 - `HARNESS_PROJECT_IDENTIFIER`: (Optional) The project identifier where the template is located.
 - `HARNESS_ORG_IDENTIFIER`: (Optional) The organization identifier where the template is located.
-- `HARNESS_TEMPLATE_PROJECT_TARGET`: (Optional) The target project identifier for the template.
-- `HARNESS_TEMPLATE_ORG_TARGET`: (Optional) The target organization identifier for the template.
+- `HARNESS_TEMPLATE_PROJECT_TARGET`: (Optional) The target project identifier for the template. If not declared, the script will default to copying the template to the organization scope.
+- `HARNESS_TEMPLATE_ORG_TARGET`: (Optional) The target organization identifier for the template. If neither this nor the `HARNESS_TEMPLATE_PROJECT_TARGET` is declared, the template will be copied to the account scope.
 
 ## Usage
 
