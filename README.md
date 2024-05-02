@@ -1,0 +1,1 @@
+# harness-copy-template-to-another-scope
